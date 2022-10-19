@@ -26,7 +26,8 @@ defmodule TypeChecker.MixProject do
         ensure_consistency: :test
       ],
       source_url: @source_url,
-      homepage_url: @source_url
+      homepage_url: @source_url,
+      xref: [exclude: [Jason]]
     ]
   end
 
