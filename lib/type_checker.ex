@@ -2,7 +2,7 @@ defmodule TypeChecker do
   @moduledoc """
   TypeChecker provides one function to check the type of variables.
 
-  It is inspired by stackoverflow.com/questions/28377135/check-typeof-variable-in-elixir thread.
+  It is inspired by https://stackoverflow.com/questions/28377135/check-typeof-variable-in-elixir thread.
   """
 
   @doc """

@@ -3,13 +3,18 @@ defmodule TypeChecker.MixProject do
 
   use Mix.Project
 
+  @source_url "https://github.com/elephantoss/ex_type_checker"
+
   def project do
     [
       app: :type_checker,
       version: "0.1.0",
       elixir: "~> 1.14",
+      build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      docs: docs(),
+      description: description(),
       package: package(),
       aliases: aliases(),
       test_coverage: [tool: ExCoveralls],
@@ -20,15 +25,8 @@ defmodule TypeChecker.MixProject do
         "coveralls.html": :test,
         ensure_consistency: :test
       ],
-      # Docs
-      name: "Type Checker",
-      source_url: "https://github.com/elephantoss/ex_type_checker",
-      homepage_url: "https://github.com/elephantoss/ex_type_checker",
-      docs: [
-        # The main page in the docs
-        main: "Type Checker",
-        extras: ["README.md"]
-      ]
+      source_url: @source_url,
+      homepage_url: @source_url
     ]
   end
 
@@ -50,6 +48,20 @@ defmodule TypeChecker.MixProject do
     ]
   end
 
+  defp docs do
+    [
+      main: "readme",
+      assets: "assets",
+      extras: ["README.md", "CHANGELOG.md": [title: "Changelog"]]
+    ]
+  end
+
+  defp description do
+    """
+    Type checker library for Elixir.
+    """
+  end
+
   #  package info for publishing to Hex.pm
   defp package do
     [
@@ -57,7 +69,7 @@ defmodule TypeChecker.MixProject do
       name: "type_checker",
       licenses: ["MIT"],
       maintainers: ["elephantoss"],
-      links: %{"GitHub" => "https://github.com/elephantoss/ex_type_checker"}
+      links: %{"GitHub" => @source_url}
     ]
   end
 
