@@ -66,7 +66,7 @@ defmodule TypeChecker.MixProject do
   #  package info for publishing to Hex.pm
   defp package do
     [
-      files: ~w(lib LICENSE mix.exs README.md),
+      files: ~w(lib LICENSE.md mix.exs README.md),
       name: "type_checker",
       licenses: ["MIT"],
       maintainers: ["elephantoss"],
