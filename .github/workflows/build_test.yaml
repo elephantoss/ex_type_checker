@@ -1,8 +1,10 @@
 name: Build & Test
 on:
   push:
-    tags-ignore:
+    branches:
       - "**"
+    tags:
+      - "!**"
 
 permissions:
   contents: read
