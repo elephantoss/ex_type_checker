@@ -8,7 +8,7 @@ defmodule TypeChecker.MixProject do
   def project do
     [
       app: :type_checker,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
