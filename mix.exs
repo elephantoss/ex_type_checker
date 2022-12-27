@@ -54,7 +54,15 @@ defmodule TypeChecker.MixProject do
     [
       main: "readme",
       assets: "assets",
-      extras: ["README.md", "CHANGELOG.md": [title: "Changelog"]]
+      extras: [
+        "README.md",
+        "livebooks/struct.livemd",
+        "CHANGELOG.md": [title: "Changelog"],
+        "LICENSE.md": []
+      ],
+      groups_for_extras: [
+        "Livebook Tutorials": Path.wildcard("livebooks/*.livemd")
+      ]
     ]
   end
 

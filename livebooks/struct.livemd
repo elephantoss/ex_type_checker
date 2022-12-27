@@ -1,0 +1,31 @@
+# Working with structs
+
+## Setup
+
+```elixir
+Mix.install([
+  {:type_checker, "~> 0.1.0"}
+])
+```
+
+## Checking the type of structs
+
+For this example, we will model a person (having only one attribute - name).
+
+```elixir
+defmodule Person do
+  defstruct name: :string
+end
+```
+
+Now that we have our struct defined, we can go ahead and create a new person.
+
+```elixir
+v1 = %Person{name: "John Smith"}
+```
+
+Use type checker's `which?` function to get the variable's type.
+
+```elixir
+TypeChecker.which?(v1)
+```
