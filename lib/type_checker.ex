@@ -6,7 +6,7 @@ defmodule TypeChecker do
   """
 
   @doc """
-  `which?/1` returns the type of a vairable.
+  `which?/1` returns the type of a variable.
 
   ## Examples
       iex> TypeChecker.which?(:atom)
