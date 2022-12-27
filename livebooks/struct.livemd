@@ -4,7 +4,7 @@
 
 ```elixir
 Mix.install([
-  {:type_checker, "~> 0.1.0"}
+  {:type_checker, "~> 0.1.1"}
 ])
 ```
 

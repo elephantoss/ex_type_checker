@@ -5,6 +5,19 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v0.1.1](https://github.com/elephantoss/ex_type_checker/compare/v0.1.0...v0.1.1) (2022-12-27)
+
+
+
+
+### Documentation 📝:
+
+* changelog: v0.1.0
+
+* livebook: add tutorial to work with structs
+
+* typo: fix typo in the function doc
+
 ## [v0.1.0](https://github.com/elephantoss/ex_type_checker/compare/v0.1.0...v0.1.0) (2022-12-27)
 
 

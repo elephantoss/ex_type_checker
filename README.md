@@ -17,7 +17,7 @@ It is inspired by this [Stack Overflow thread](https://stackoverflow.com/questio
 ```elixir
 def deps do
   [
-    {:type_checker, "~> 0.1.0"}
+    {:type_checker, "~> 0.1.1"}
   ]
 end
 ```
